@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="aaa">
     <el-button type="text" @click="linkList">文字按钮</el-button>
   </div>
 </template>
@@ -18,5 +18,8 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped type="text/css">
+  .aaa{
+    background: #000;
+  }
 </style>
