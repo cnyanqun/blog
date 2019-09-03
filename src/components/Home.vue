@@ -20,6 +20,6 @@ export default {
 </script>
 <style lang="scss" scoped type="text/css">
   .aaa{
-    background: #000;
+    background: $bg;
   }
 </style>
