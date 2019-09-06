@@ -3,18 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/display.css';
-import 'element-ui/lib/theme-chalk/index.css'
-import './assets/global.css'
-
-Vue.use(ElementUI)
+import $ from "jquery";
+import Bootstrap from 'bootstrap'
+import 'bootstrap/dist/js/bootstrap.min.js';
+Vue.use(Bootstrap)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
