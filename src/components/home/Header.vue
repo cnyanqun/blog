@@ -19,21 +19,21 @@
             </button>
 
             <!-- Text Logo -->
-            <a class="navbar-brand" href="#">Kevin</a>
+            <!-- <a class="navbar-brand" href="#">Kevin</a> -->
 
             <!-- Image Logo -->
-            <!-- <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a> -->
+            <a class="navbar-brand" href="#"><img src="@/assets/images/logo_1.png" style="margin-top:-20px;"></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav mu-menu navbar-right">
               <li>
-                <a href="#">HOME</a>
+                <a href="#">首页</a>
               </li>
-              <li>
-                <a href="#mu-about">ABOUT US</a>
-              </li>
+              <!-- <li>
+                <a href="#mu-about">关于</a>
+              </li> -->
               <li>
                 <a href="#mu-service">SERVICES</a>
               </li>

@@ -1,6 +1,6 @@
 <template>
   <!-- Start About -->
-  <section id="mu-about">
+  <section id="mu-about" class="mu-fixed-nav">
     <div class="container">
       <div class="row">
         <div class="col-md-12">

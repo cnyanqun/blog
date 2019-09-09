@@ -1,9 +1,10 @@
 <template>
   <div>
+    <!-- 头部 -->
     <Header />
     <section-slider />
     <main role="main">
-      <section-about />
+      <!-- <section-about /> -->
       <section-service />
       <section-portfolio />
       <section-testimonials />
