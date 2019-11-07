@@ -1,15 +1,22 @@
 <template>
   <div>
-    <el-button type="text" disabled>list</el-button>
+    <Table1 />
+    <Table2 />
   </div>
 </template>
 
 <script>
+import Table1 from "./table/Table1";
+import Table2 from "./table/Table2";
 export default {
-  name: 'List',
-  data () {
+  data() {
+    return {};
+  },
+  components: {
+    Table1,
+    Table2
   }
-}
+};
 </script>
 <style scoped>
 </style>
