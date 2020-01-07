@@ -1,7 +1,7 @@
 <template>
   <div>
     <Table1 />
-    <Table2 />
+    <!-- <Table2 /> -->
   </div>
 </template>
 
