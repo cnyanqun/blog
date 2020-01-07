@@ -5,19 +5,18 @@ import App from './App'
 import router from './router'
 import $ from "jquery";
 import Bootstrap from 'bootstrap'
+import VCharts from 'v-charts'
 import 'bootstrap/dist/js/bootstrap.min.js';
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(Bootstrap)
+Vue.use(VCharts)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: {
-    App
-  },
-  template: '<App/>'
+  render: h => h(App)
 })

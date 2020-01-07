@@ -1,86 +1,20 @@
 <template>
-  <el-table :data="tableData" style="width: 100%" border>
-    <el-table-column prop="date" label="日期" width="150"></el-table-column>
-    <el-table-column label="配送信息">
-      <el-table-column prop="name" label="姓名" width="120"></el-table-column>
-      <el-table-column label="地址">
-        <el-table-column label="省份">
-          <el-table-column prop="city" label="市区" width="120"></el-table-column>
-          <el-table-column prop="address" label="地址" width="300"></el-table-column>
-        </el-table-column>
-        <el-table-column prop="city" label="市区" width="120"></el-table-column>
-        <el-table-column prop="address" label="地址" width="300"></el-table-column>
-        <el-table-column prop="zip" label="邮编" width="120"></el-table-column>
-      </el-table-column>
-    </el-table-column>
-  </el-table>
+  <ve-line :data="chartData"></ve-line>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      tableData: [
-        {
-          date: "2016-05-03",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-02",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-04",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-01",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-08",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-06",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
-        },
-        {
-          date: "2016-05-07",
-          name: "王小虎",
-          province: "上海",
-          city: "普陀区",
-          address: "上海市普陀区金沙江路 1518 弄",
-          zip: 200333
+  export default {
+    data () {
+      return {
+        chartData: {
+          columns: ['日期', '访问用户', '下单用户'],
+          rows: [
+            { '日期': '2018-05-22', '访问用户': 32371, '下单用户': 19810 },
+            { '日期': '2018-05-23', '访问用户': 12328, '下单用户': 4398 },
+            { '日期': '2018-05-24', '访问用户': 92381, '下单用户': 52910 }
+          ]
         }
-      ]
-    };
+      }
+    }
   }
-};
 </script>
-<style scoped>
-</style>
