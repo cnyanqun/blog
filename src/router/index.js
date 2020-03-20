@@ -7,22 +7,22 @@ import List from '@/components/List'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   routes: [
-    {
-      path: '/home',
-      name: 'Home',
-      component: Home
-    },
+    // {
+    //   path: '/home',
+    //   name: 'Home',
+    //   component: Home
+    // },
     {
       path: '/',
       name: 'Create',
       component: Create
     },
-    {
-      path: '/list',
-      name: 'List',
-      component: List
-    },
+    // {
+    //   path: '/list',
+    //   name: 'List',
+    //   component: List
+    // },
   ]
 })

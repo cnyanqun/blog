@@ -8,6 +8,7 @@ import Bootstrap from 'bootstrap'
 import VCharts from 'v-charts'
 import 'bootstrap/dist/js/bootstrap.min.js';
 import ElementUI from 'element-ui'
+import './utils'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 Vue.use(Bootstrap)
