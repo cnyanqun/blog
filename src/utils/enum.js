@@ -4,14 +4,18 @@ const ENUM = {
   commonList: [{
       name: "通用控件",
       children: [{
-          name: "轮播图",
-          icon: "lunbo"
-        },
-        {
-          name: "功能菜单",
-          icon: "gongnengcaidan"
-        }
-      ]
+        name: "轮播图",
+        icon: "lunbo"
+      }, {
+        name: "功能菜单",
+        icon: "gongnengcaidan"
+      }, {
+        name: "功能菜单",
+        icon: "gongnengcaidan"
+      }, {
+        name: "功能菜单",
+        icon: "gongnengcaidan"
+      }]
     },
     {
       name: "营销控件",

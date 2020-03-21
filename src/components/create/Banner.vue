@@ -60,16 +60,16 @@
           </div>
         </el-card>
       </el-col>
-      <!-- <el-col :span="12">
+      <el-col :span="12">
         <el-card>
-          <div class="list-group col-md-6">
-            <pre>{{listString}}</pre>
-          </div>
           <div class="list-group col-md-6">
             <pre>{{list2String}}</pre>
           </div>
+          <div class="list-group col-md-6">
+            <pre>{{listString}}</pre>
+          </div>
         </el-card>
-      </el-col>-->
+      </el-col>
     </el-row>
   </div>
 </template>
@@ -165,14 +165,11 @@ export default {
   color: rgb(118, 118, 235);
 }
 .enumBox {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  @include clearfix;
 }
 .enumBoxItem {
-  width: 28%;
-  flex: 0 0 auto;
+  width: 33.333%;
+  float: left;
   text-align: center;
   transform: none !important;
   .iconfont {
