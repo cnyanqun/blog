@@ -6,10 +6,12 @@ import router from './router'
 import $ from "jquery";
 import Bootstrap from 'bootstrap'
 import VCharts from 'v-charts'
-import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js'
 import ElementUI from 'element-ui'
 import './utils'
 import 'element-ui/lib/theme-chalk/index.css'
+import CKEditor from '@ckeditor/ckeditor5-vue'
+Vue.use(CKEditor);
 Vue.use(ElementUI)
 Vue.use(Bootstrap)
 Vue.use(VCharts)

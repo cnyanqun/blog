@@ -1,5 +1,7 @@
 <template>
   <div class="fluid container">
+    <component v-bind:is="isWhich"></component>
+    <b111></b111>
     <el-row :gutter="20">
       <el-col :span="6">
         <el-card>
@@ -77,11 +79,28 @@
 <script>
 import draggable from "vuedraggable";
 
+const requireComponent = require.context(
+  "../bannerComponents", //组件所在目录的相对路径
+  true, //是否查询其子目录
+  /\w+\.vue$/ //匹配基础组件文件名的正则表达式
+);
+var comObj = {};
+requireComponent.keys().forEach(fileName => {
+  // 获取文件名
+  var names = fileName
+    .split("/")
+    .pop()
+    .replace(/\.\w+$/, "");
+  // 获取组件配置
+  const componentConfig = requireComponent(fileName);
+  // 若该组件是通过"export default"导出的，优先使用".default"，否则退回到使用模块的根
+  comObj[names] = componentConfig.default || componentConfig;
+});
+comObj.draggable = draggable;
+console.log(comObj);
 export default {
   name: "hello",
-  components: {
-    draggable
-  },
+  components: comObj,
   data() {
     return {
       changeList: [],
@@ -99,7 +118,8 @@ export default {
           id: index + 1
         };
       }),
-      delayedDragging: false
+      delayedDragging: false,
+      isWhich: "a111"
     };
   },
   mounted() {
